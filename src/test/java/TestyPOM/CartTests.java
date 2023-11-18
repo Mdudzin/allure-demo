@@ -2,15 +2,20 @@ package TestyPOM;
 
 import PageObjects.CategoryPage;
 import PageObjects.ProductPage;
+import io.qameta.allure.Description;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayName("Cart Tests")
 public class CartTests extends BaseTest {
 
     @Test
+    @DisplayName("Add product to cart from product page test")
+    @Description("Add product to cart from product page test")
     public void addToCartFromProductPageTest() {
         ProductPage productPage = new ProductPage(driver).goTo(configuration.getBaseUrl() + testData.getProduct().getUrl());
         productPage.demoNotice.close();

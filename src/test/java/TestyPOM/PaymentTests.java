@@ -4,10 +4,12 @@ import PageObjects.CartPage;
 import PageObjects.CheckoutPage;
 import PageObjects.OrderReceivedPage;
 import PageObjects.ProductPage;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayName("Payment Tests")
 public class PaymentTests extends BaseTest {
 
     @Test

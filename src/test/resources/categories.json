@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Ignored tests",
+    "matchedStatuses": [ "skipped" ]
+  },
+  {
+    "name": "Product defects",
+    "matchedStatuses": [ "failed" ],
+    "messageRegex": ".*But was.*"
+  },
+  {
+    "name": "Test defects",
+    "matchedStatuses": [ "failed" ],
+    "messageRegex": ".*Exception.*"
+  }
+]
